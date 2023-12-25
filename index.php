@@ -7,5 +7,6 @@ if (isset($_GET['accion'])) {
     method_exists('Controller', $_GET['accion']) ? $controller->{$_GET['accion']}() : $controller->pagInicio();
 } else {
     $controller->pagInicio();
+    
 }
 
