@@ -30,23 +30,9 @@ class User
     {
         $this->contrasenia = $contrasenia;
     }
-    public function login()
-    {
-        $sql = "SELECT * FROM registro WHERE email = :email AND contrasenia = :contrasenia";
-        $stmt = $this->pdo->get_ObtenerConexion()->prepare($sql);
-        $stmt->execute([
-            'email' => $this->email,
-            'contrasenia' => $this->contrasenia
-        ]);
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        if ($result) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    function comprobarUsuario($email)
-    {
+    //! Metodo comprobar usuario y recibe por parametro un $email
+    function comprobarUsuario($email){
+    
         $pdo = $this->pdo->get_ObtenerConexion();
         $sentencia = $pdo->prepare("SELECT * FROM registro WHERE email=?;");
         $sentencia->bindParam(1, $email, PDO::PARAM_STR);
@@ -57,8 +43,7 @@ class User
         }
     }
     //* funcción para validar email
-    function validarEmail($email)
-    {
+    function validarEmail($email){
         try {
             //  elimina espacios en blanco al principio y al final
             $email = trim($email);
@@ -77,9 +62,8 @@ class User
         }
     }
     // * funccion para validar contraseña
-    function validarContrasenia($contrasenia)
-    {
-
+    function validarContrasenia($contrasenia){
+    
         try { // elimina espacios en blanco
             $contrasenia = trim($contrasenia);
             // comprueba que la contraseña tenga al menos 8 caracteres
@@ -108,8 +92,8 @@ class User
         }
     }
     // * funccion contraseña correcta
-    function contraseniaCorrecta($contrasenia, $contrasenaDB)
-    {
+    function contraseniaCorrecta($contrasenia, $contrasenaDB){
+    
         $passVerificado = password_verify($contrasenia, $contrasenaDB);
         if ($passVerificado) {
             return true;
