@@ -1,22 +1,22 @@
 <?php
 
-//! requiere el modelo siguiente
+// requiere el modelo siguiente
 require_once('models/User_model.php');
+require_once('models/Productos_model.php');
 
-//! clase accion controller que es requerida por el index del proyecto
+// clase accion controller que es requerida por el index del proyecto
 class ControllerProductos{
-    //! definimos variable privada
-    private $accion; 
-    //! constructor de la clase   
-    public function __construct(){
-        $this->accion = new Producto();
-    }
-    //! metodos estaticos mostrar
-    public function index(){
+
+    public function pagInicio(){
         $producto = new Producto();
-        $resultados = $producto->get_Productos();        
+        $resultados = $producto->get_Productos();
+        require_once "views/user/index.php";
     }
-    //! metodo cargar
+     //public function index(){
+     //   $producto = new Producto();
+     //   $resultados = $producto->get_Productos();        
+    //}
+    // metodo cargar
     public function cargar($usuario){
         $producto = new Producto();
         $resultados = $producto->get_Cargar($usuario);
@@ -24,43 +24,48 @@ class ControllerProductos{
         require_once 'views/producto/productos.php';        
     }
 
-    //! metodo agregar
+    // metodo agregar
     public function agregar(){
-        require_once "view/agregar.php";
+        require_once "views/producto/agregar.php";
     }
-    public function salvar(){
-        if(isset($_POST['accion'])&&$_POST['accion']=='Salvar'){            
-            $nombre = $_REQUEST['nombre_pro'];
-            $marca = $_REQUEST['marca'];
-            $fabricado = $_REQUEST['fabricado'];
-            $precio = $_REQUEST['precio'];            
+    public function addProducto(){
+        if(isset($_GET['accion']) && $_POST['addProducto']=='salvar'){
+            $nombre = $_REQUEST['nombre'];
+            $precio = $_REQUEST['precio'];
+            $descripcion = $_REQUEST['descripcion'];
+            $idVendedor = $_SESSION['id'];            
             $producto = new Producto();
-            $resultados = $producto->set_CrearProducto($nombre,$marca,$fabricado,$precio);
-
-            exit;
+            $resultados=$producto->set_CrearProducto($nombre,$precio,$descripcion,$idVendedor);
+            if($resultados=true){
+                $productos= new ControllerProductos;
+                $resultados = $productos->cargar($_SESSION['usuario']);                    
+                require_once "views/producto/productos.php";
+            }
         }else{echo "Datos de producto faltantes o inválidos";}
 
     }
     //? metodo editar
     public static function editar(){
         if(isset($_GET['accion'])&& $_GET['accion']=='editar')
-        {$id = $_GET['id'];
+        {$id = $_GET['id_pro'];
         $producto = new Producto();
         $resultados = $producto->get_ProductosById($id);
-        require_once "view/editar.php";}
+        require_once "views/producto/editar.php";}
     }
 
     //? metodo actualizar
     public static function actualizar(){
         if(isset($_POST['accion'])&& $_POST['accion']=='Editar'){
-            $id = $_POST['id'];
+            $id = $_POST['id_pro'];
             $nombre = $_POST['nombre_pro'];
-            $marca = $_POST['marca'];
-            $fabricado = $_POST['fabricado'];
-            $precio = $_POST['precio'];            
+            $precio = $_POST['precio_pro'];
+            $descripcion = $_POST['descripcion_pro'];
+            $idVendedor = $_POST['id_vendedor'];            
             $producto = new Producto();
-            $resultados = $producto->set_ProductosById($id, $nombre, $marca, $fabricado, $precio);
-            
+            $producto->set_ProductosById($id, $nombre, $precio, $descripcion, $idVendedor);
+            $productos= new ControllerProductos;
+            $resultados = $productos->cargar($_SESSION['usuario']);
+            require_once "views/producto/productos.php";
 
         }else{echo "Datos de producto faltantes o inválidos";}
 
@@ -68,11 +73,12 @@ class ControllerProductos{
     //? metodo eliminar
     public static function eliminar(){
         if(isset($_GET['accion'])&& $_GET['accion']=='eliminar'){
-            $id = $_GET['id'];  
+            $id = $_GET['id_pro'];  
             $producto = new Producto();
             $resultados = $producto->delete_ProductosById($id);
-
-
+            $productos= new ControllerProductos;
+            $resultados = $productos->cargar($_SESSION['usuario']);
+            require_once "views/producto/productos.php";
         }else{echo "Datos de producto faltantes o inválidos";}
 
     }

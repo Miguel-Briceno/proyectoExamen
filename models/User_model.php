@@ -30,9 +30,8 @@ class User
     {
         $this->contrasenia = $contrasenia;
     }
-    //! Metodo comprobar usuario y recibe por parametro un $email
+    // Metodo comprobar usuario y recibe por parametro un $email
     function comprobarUsuario($email){
-    
         $pdo = $this->pdo->get_ObtenerConexion();
         $sentencia = $pdo->prepare("SELECT * FROM registro WHERE email=?;");
         $sentencia->bindParam(1, $email, PDO::PARAM_STR);
@@ -40,6 +39,17 @@ class User
         $resultados = $sentencia->fetch(PDO::FETCH_ASSOC);
         if ($resultados) {
             return $resultados;
+        }
+    }
+    //! Metodo para devolver id
+    function getId($email){
+        $pdo = $this->pdo->get_ObtenerConexion();
+        $sentencia = $pdo->prepare("SELECT id FROM registro WHERE email=?;");
+        $sentencia->bindParam(1, $email, PDO::PARAM_STR);
+        $sentencia->execute();
+        $resultados = $sentencia->fetch(PDO::FETCH_ASSOC);
+        if ($resultados) {
+            return $resultados['id'];
         }
     }
     //* funcción para validar email

@@ -33,8 +33,8 @@
                                 <td><?php echo $valor['precio_pro'] ?></td>
                                 <td><?php echo $valor['descripcion_pro'] ?></td>
                                 <td>
-                                    <a href="index.php?accion=editar_pro&id=<?php echo $valor['id_pro'] ?>">Editar</a>
-                                    <a href="index.php?accion=eliminar_pro&id=<?php echo $valor['id_pro'] ?>">Eliminar</a>
+                                    <a href="index.php?accion=editar&id_pro=<?php echo $valor['id_pro'] ?>">Editar</a>
+                                    <a href="index.php?accion=eliminar&id_pro=<?php echo $valor['id_pro'] ?>">Eliminar</a>
                                 </td>
                             </tr>
 
