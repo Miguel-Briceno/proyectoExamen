@@ -5,6 +5,7 @@ require_once 'config/config.php';
 require_once 'controllers/User_controller.php';
 require_once 'controllers/Productos_controller.php';
 
+
 // Verifica si hay una sesión activa
 if (isset($_SESSION['usuario'])) {
     // Si hay una sesión activa, redirige según la acción

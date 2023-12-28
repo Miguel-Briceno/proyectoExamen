@@ -1,4 +1,5 @@
 <?php
+require_once "views/templates/header.php";//? template header
     if (!isset($_SESSION['usuario'])) {
         header('Location: index.php');
     }
@@ -52,3 +53,4 @@
     </div><!-- final class contenedor-->
 </section>
 
+<?php require_once "views/templates/footer.php";?> //? template footer 

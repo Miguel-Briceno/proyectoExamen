@@ -1,5 +1,5 @@
 <?php
-include "views/templates/header.php";
+require_once "views/templates/header.php";
 
 ?>
 <div class="container">
@@ -17,5 +17,5 @@ include "views/templates/header.php";
     </div>
 
 <?php
-include "views/templates/footer.php";
+require_once "views/templates/footer.php";
 ?>

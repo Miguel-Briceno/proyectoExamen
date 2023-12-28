@@ -2,9 +2,11 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     height: 100%;
+    
 }
 body {
-    background-color: aqua;
+    
+    border: 2px soli red;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -14,6 +16,7 @@ body {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #ffffff;
 }    
 a {
     text-decoration: none;

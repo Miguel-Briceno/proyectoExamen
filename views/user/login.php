@@ -1,5 +1,5 @@
 <?php
-include "views/templates/header.php";//? template header
+require_once "views/templates/header.php";//? template header
 ?>
 
 <main>
@@ -27,5 +27,5 @@ include "views/templates/header.php";//? template header
     </div><!-- final Clase contenedor-->
 </main>
 <?php
-include "views/templates/footer.php";//? template footer
+require_once "views/templates/footer.php";//? template footer
 ?>
