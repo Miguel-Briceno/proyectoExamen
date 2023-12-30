@@ -1,5 +1,6 @@
 <?php
 require_once "views/templates/header.php"; //? template header
+require_once "views/templates/navUser.php";//? template navUser
 ?>
 <div class="contenedor">
     <!--//! Página index muestra la portada con un título, unas instrucciones y una imagenes sobre propiedades
@@ -50,7 +51,9 @@ require_once "views/templates/header.php"; //? template header
         </tbody>
     </table>
 </div><!-- final Clase contenedor-->
-
+<div class="ancla">
+        <a href="#">Ir al inicio</a>
+    </div>
 <?php
 require_once "views/templates/footer.php"; //? template footer
 ?>

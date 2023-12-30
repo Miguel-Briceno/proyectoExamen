@@ -42,3 +42,4 @@ class ConexionDB
         $this->conexion = null;
     }
 }
+?>

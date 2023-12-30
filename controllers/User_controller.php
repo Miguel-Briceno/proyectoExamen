@@ -29,14 +29,14 @@ class ControllerUser{
             } else {// si el usuario existe comprobamos la contraseña que esta en la base de datos 
                 // con la contraseña que ingresa el usuario y si coinciden se inicia sessión
                 $contraseniaDB = $usuarioExiste['contrasenia'];
-                if ($contrasenia == $contraseniaDB) {
-                    session_start(); // inicio de session
+                if ($contrasenia == $contraseniaDB) {                                         
                     $_SESSION['usuario'] = $email;
                     $_SESSION['id'] = $usuario->getId($email);
                     // se crea la clave usuario en el array $_SESSION
                     // que nos permite guardar el usuario durante la session
                     // definimos la cokies con el usuario qu ha accedido
-                    setcookie("usuario", $email, time() + (86400 * 30), "/");
+                    setcookie("usuario", $email, time() + 3600);
+                    
                     $productos= new ControllerProductos;
                     $resultados = $productos->cargar($email);                    
                     require_once "views/producto/productos.php";                   
@@ -48,3 +48,5 @@ class ControllerUser{
     }
     
 }
+
+?>

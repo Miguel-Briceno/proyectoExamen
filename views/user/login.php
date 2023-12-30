@@ -1,5 +1,6 @@
 <?php
 require_once "views/templates/header.php";//? template header
+require_once "views/templates/navUser.php";//? template navUser
 ?>
 
 <main>
@@ -8,8 +9,8 @@ require_once "views/templates/header.php";//? template header
             <h2>Login Vendedores</h2>
         </div><!-- final Clase título -->
         <div class="contenedor-form">
-            <!--//! aqui se encuentra el primer formulario que envia la información de login email y password
-            //! a traves de la url se para una clave valor a la raiz del proyecto donde se va a procesar
+            <!--// aqui se encuentra el primer formulario que envia la información de login email y password
+            // a traves de la url se para una clave valor a la raiz del proyecto donde se va a procesar
             -->
             <form action="index.php?accion=login" method="POST">
                 <div class="contenedor-input">
@@ -21,7 +22,7 @@ require_once "views/templates/header.php";//? template header
                     <input class="input" type="password" name="contrasenia" id="contrasenia" placeholder="Escribe tu contrasenia" required>
                 </div>
                 <input type="hidden" name="inicioSession">
-                <input class="input" type="submit" value="Iniciar Sesión">
+                <input class="btn input" type="submit" value="Iniciar Sesión">
             </form>
         </div><!-- final Clase contenedor-form -->
     </div><!-- final Clase contenedor-->

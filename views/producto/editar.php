@@ -1,6 +1,8 @@
 <!-- Se hace el requerimiento de el template header-->
-<?php require_once 'views/templates/header.php'; ?>
-<?php require_once 'controllers/Productos_controller.php' ?>
+<?php
+    require_once "views/templates/header.php"; //? template header
+    require_once "views/templates/navProducto.php";//? template navUser 
+?>
 
 <!-- Titulo--> 
 <div class="titulo">
@@ -33,6 +35,7 @@
         </div>
         <div class="contenedor-input">            
             <input type="submit" name="accion" value="Editar">
+            <a class="btn" href="index.php?accion=atras">Regresar</a>
         </div>        
     </form>
     <?php endforeach; ?>

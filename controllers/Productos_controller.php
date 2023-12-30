@@ -82,9 +82,18 @@ class ControllerProductos{
         }else{echo "Datos de producto faltantes o inválidos";}
 
     }
+    // metodo que nos permite cerrar la session
+public function cerrarSession(){
+        
+    session_unset();
+    session_destroy();
+    header('Location: index.php');
+    exit;
 }
-
-
-
-
+public function atras(){
+    $productos= new ControllerProductos;
+    $resultados = $productos->cargar($_SESSION['usuario']);
+    require_once "views/producto/productos.php";
+}
+}
 ?>

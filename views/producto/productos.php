@@ -1,17 +1,15 @@
 <?php
-require_once "views/templates/header.php";//? template header
-    if (!isset($_SESSION['usuario'])) {
-        header('Location: index.php');
-    }
-    $usuario=$_SESSION['usuario'];
+    require_once "views/templates/header.php"; //? template header
+    require_once "views/templates/navProducto.php";//? template navUser 
 ?>
+
 <section>
     <div class="contenedor">
         <div class="titulo">
             <h2>Panel de Administración</h2>
         </div><!-- final class título-->
         <div class="container-table">
-            <h3>Bienvenido <?php echo $usuario; ?></h3>
+            <h3>Bienvenido <?php echo $_SESSION['usuario']; ?></h3>
             <a href="index.php?accion=agregar">Agregar</a>
             <table border="2">
                 <thead>
@@ -33,7 +31,7 @@ require_once "views/templates/header.php";//? template header
                                 <td><?php echo $valor['nombre_pro'] ?></td>
                                 <td><?php echo $valor['precio_pro'] ?></td>
                                 <td><?php echo $valor['descripcion_pro'] ?></td>
-                                <td>
+                                <td class="btn">
                                     <a href="index.php?accion=editar&id_pro=<?php echo $valor['id_pro'] ?>">Editar</a>
                                     <a href="index.php?accion=eliminar&id_pro=<?php echo $valor['id_pro'] ?>">Eliminar</a>
                                 </td>
@@ -53,4 +51,6 @@ require_once "views/templates/header.php";//? template header
     </div><!-- final class contenedor-->
 </section>
 
-<?php require_once "views/templates/footer.php";?> //? template footer 
+<?php
+    require_once "views/templates/footer.php"; //? template footer    
+?>
