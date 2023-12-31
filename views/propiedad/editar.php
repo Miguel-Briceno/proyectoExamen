@@ -1,12 +1,12 @@
 <!-- Se hace el requerimiento de el template header-->
 <?php
     require_once "views/templates/header.php"; //? template header
-    require_once "views/templates/navProducto.php";//? template navUser 
+    require_once "views/templates/navPropiedad.php";//? template navUser 
 ?>
 
 <!-- Titulo--> 
 <div class="titulo">
-            <h2>Estamos Editando un Producto</h2>
+            <h2>Estamos Editando una Propiedad</h2>
         </div>
 <!-- formulario -->
 <div class="contenedor-form">
@@ -15,7 +15,7 @@
     <form action="index.php?accion=actualizar" method="POST">
         <div class="contenedor-input">
             <label for="id">Id:</label>
-            <input type="text" name="id_pro" id="id" value="<?= $valor['id_pro'] ?>" readonly>
+            <input type="text" name="id" id="id" value="<?= $valor['id'] ?>" readonly>
         </div>
         <div class="contenedor-input">
             <label for="nombre_pro">Nombre:</label>
@@ -42,7 +42,7 @@
         <!-- Si no existen productos en la bbdd se muestra el mensaje -->
         <?php else: ?>
             <tr>
-                <td colspan="6">"No hay productos"</td>
+                <td colspan="6">"No hay propiedades"</td>
             </tr>
         <?php endif; ?>
 </div> 

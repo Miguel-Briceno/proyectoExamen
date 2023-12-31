@@ -8,13 +8,13 @@
                 <div class="contenedor-link">
                     <ul class="link">
                         <li class="">
-                            <a class="" href="http://localhost/proyectoExamen/">Home</a>
+                            <a class="" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="" href="http://localhost/proyectoExamen/index.php?accion=registro">Registro</a>
+                            <a class="" href="index.php?accion=registro">Registro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/proyectoExamen/index.php?accion=inicioSession">Logín</a>
+                            <a class="nav-link" href="index.php?accion=inicioSession">Logín</a>
                         </li>                            
                     </ul>
                 </div>

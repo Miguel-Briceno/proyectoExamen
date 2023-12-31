@@ -1,0 +1,993 @@
+
+[30-Dec-2023 23:42:26 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:42:26 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:42:27 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:42:27 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:42:29 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:42:29 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:42:29 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:42:29 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:42:31 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:42:45 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:42:45 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:42:45 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:42:45 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:42:45 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:42:58 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:42:58 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:48:15 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:48:15 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:48:15 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:48:19 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:48:35 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:48:35 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:48:35 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:48:35 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:48:35 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:54:17 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:54:17 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:54:17 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:54:17 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 30
+[30-Dec-2023 23:54:37 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:54:53 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:54:53 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:54:53 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:54:53 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:54:53 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:54:53 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 48
+[30-Dec-2023 23:55:58 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:55:58 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:55:58 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 30
+[30-Dec-2023 23:56:56 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:57:13 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:57:13 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:57:13 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:57:13 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:57:13 Europe/Berlin] error en la conexion a la BBDD
+[30-Dec-2023 23:58:32 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:58:34 Europe/Berlin] Hello, errors!
+[30-Dec-2023 23:58:34 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:04:57 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:04:57 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:05:05 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:05:05 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:05:34 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:05:34 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:06:03 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:06:03 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:08:02 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:08:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:09:15 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:09:15 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:09:24 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:09:36 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:09:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:09:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:09:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: La contraseña debe tener al menos una letra mayúscula in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php:45
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\models\User_model.php(67): Validaciones->validarContrasenia('ma10014696?')
+#1 C:\xampp\htdocs\proyectoExamen\controllers\User_controller.php(21): User->validarUsuario()
+#2 C:\xampp\htdocs\proyectoExamen\index.php(34): ControllerUser->login()
+#3 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php on line 45
+[31-Dec-2023 00:09:56 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:10:06 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:10:06 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:10:06 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:10:06 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:10:06 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:10:45 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:10:45 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:10:45 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:10:47 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:11:05 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:11:05 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:11:05 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:11:05 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:11:05 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:11:12 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:12:25 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:12:25 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:12:25 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:12:25 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:12:53 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:13:50 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:13:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:13:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:13:51 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:42:07 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:42:07 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:42:07 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:42:09 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:42:12 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:42:18 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:42:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:42:38 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:42:56 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:42:56 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:42:56 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:42:56 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:42:56 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:43:14 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:43:14 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:43:14 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:43:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:43:27 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:43:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:43:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:43:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:43:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:43:37 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:43:37 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:43:46 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:43:46 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:43:46 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\proyectoExamen\views\user\index.php:53) in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 132
+[31-Dec-2023 00:43:48 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:44:00 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:44:00 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:44:00 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:44:00 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:44:00 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:44:07 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:44:07 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:44:30 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:44:30 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:56:15 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:56:15 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:56:49 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:56:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 00:57:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 00:57:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:07:54 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:07:54 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:07:54 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:09:01 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:09:01 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:09:01 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\proyectoExamen\views\user\index.php:53) in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 129
+[31-Dec-2023 01:09:03 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:09:05 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:09:21 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:09:21 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:09:21 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:09:21 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:09:21 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:09:28 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:11:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:11:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:11:22 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\proyectoExamen\views\user\index.php:53) in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 129
+[31-Dec-2023 01:11:26 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:11:40 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:11:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:11:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:11:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:11:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:14:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:19:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:19:25 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:19:29 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:19:29 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:19:35 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:19:35 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:19:35 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\proyectoExamen\views\user\index.php:53) in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 129
+[31-Dec-2023 01:19:38 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:19:50 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:19:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:19:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:19:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:19:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:21:06 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:22:28 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:22:32 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:22:32 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:22:32 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\proyectoExamen\views\user\index.php:53) in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 129
+[31-Dec-2023 01:25:34 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:25:50 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:25:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:25:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:25:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:25:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:26:04 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:26:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:26:04 Europe/Berlin] PHP Warning:  PDO::prepare(): Premature EOF in result field metadata in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 132
+[31-Dec-2023 01:26:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bindParam() on bool in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php:133
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php(144): Propiedad->get_PropiedadesByFiltro('precio', 3)
+#1 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades->filtrar()
+#2 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 133
+[31-Dec-2023 01:33:58 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:33:58 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:33:58 Europe/Berlin] PHP Warning:  PDO::prepare(): Premature EOF in result field metadata in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 132
+[31-Dec-2023 01:33:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bindParam() on bool in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php:133
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php(144): Propiedad->get_PropiedadesByFiltro('precio', 3)
+#1 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades->filtrar()
+#2 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 133
+[31-Dec-2023 01:34:00 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:34:00 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:34:00 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\proyectoExamen\views\user\index.php:53) in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 129
+[31-Dec-2023 01:34:02 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:34:14 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:34:14 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:34:14 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:34:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: La contraseña debe tener al menos una letra mayúscula in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php:45
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\models\User_model.php(67): Validaciones->validarContrasenia('10014696?')
+#1 C:\xampp\htdocs\proyectoExamen\controllers\User_controller.php(21): User->validarUsuario()
+#2 C:\xampp\htdocs\proyectoExamen\index.php(34): ControllerUser->login()
+#3 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php on line 45
+[31-Dec-2023 01:35:40 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:35:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:35:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:35:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: La contraseña debe tener al menos una letra mayúscula in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php:45
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\models\User_model.php(67): Validaciones->validarContrasenia('10014696?')
+#1 C:\xampp\htdocs\proyectoExamen\controllers\User_controller.php(21): User->validarUsuario()
+#2 C:\xampp\htdocs\proyectoExamen\index.php(34): ControllerUser->login()
+#3 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php on line 45
+[31-Dec-2023 01:35:42 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:35:55 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:35:55 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:35:55 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:35:55 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:35:55 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:36:03 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:36:03 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:36:10 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:36:10 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:36:16 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:36:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:39:47 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:39:47 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:39:47 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:40:39 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:41:11 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:41:11 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:41:11 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:41:11 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:41:19 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:41:40 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:41:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:41:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:41:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:41:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:41:51 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:41:51 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:41:51 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:41:55 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:42:16 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:42:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:42:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:42:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:42:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:42:26 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:42:26 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:42:30 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:42:30 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:42:34 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:42:34 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:42:42 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:42:42 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:42:47 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:42:47 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:42:57 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:42:57 Europe/Berlin] PHP Warning:  Undefined array key "id_pro" in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 111
+[31-Dec-2023 01:42:57 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:42:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class Propiedad could not be converted to string in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php:119
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php(113): Propiedad->delete_PropiedadesById(NULL)
+#1 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades::eliminar()
+#2 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 119
+[31-Dec-2023 01:43:57 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:43:57 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:43:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class Propiedad could not be converted to string in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php:119
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php(113): Propiedad->delete_PropiedadesById('3')
+#1 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades::eliminar()
+#2 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 119
+[31-Dec-2023 01:43:58 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:43:58 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:44:18 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:44:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:44:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class Propiedad could not be converted to string in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php:119
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php(113): Propiedad->delete_PropiedadesById('3')
+#1 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades::eliminar()
+#2 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 119
+[31-Dec-2023 01:44:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:44:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:44:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class Propiedad could not be converted to string in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php:119
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php(113): Propiedad->delete_PropiedadesById('3')
+#1 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades::eliminar()
+#2 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 119
+[31-Dec-2023 01:44:30 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:44:30 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:44:36 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:44:52 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:44:52 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:44:52 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:44:52 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:44:52 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:44:56 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:44:56 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:44:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class Propiedad could not be converted to string in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php:119
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php(113): Propiedad->delete_PropiedadesById('3')
+#1 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades::eliminar()
+#2 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 119
+[31-Dec-2023 01:46:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:46:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:46:25 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:46:36 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:46:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:46:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:46:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:46:37 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:46:40 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:46:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:46:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:46:40 Europe/Berlin] PHP Warning:  require_once(views/producto/productos.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 116
+[31-Dec-2023 01:46:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'views/producto/productos.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php:116
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades::eliminar()
+#1 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 116
+[31-Dec-2023 01:47:21 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:47:21 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:47:23 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:47:36 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:47:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:47:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:47:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: La contraseña debe tener al menos una letra mayúscula in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php:45
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\models\User_model.php(67): Validaciones->validarContrasenia('ma10014696?')
+#1 C:\xampp\htdocs\proyectoExamen\controllers\User_controller.php(21): User->validarUsuario()
+#2 C:\xampp\htdocs\proyectoExamen\index.php(34): ControllerUser->login()
+#3 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php on line 45
+[31-Dec-2023 01:47:49 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:47:49 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:47:49 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:47:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: La contraseña debe tener al menos una letra mayúscula in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php:45
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\models\User_model.php(67): Validaciones->validarContrasenia('ma10014696?')
+#1 C:\xampp\htdocs\proyectoExamen\controllers\User_controller.php(21): User->validarUsuario()
+#2 C:\xampp\htdocs\proyectoExamen\index.php(34): ControllerUser->login()
+#3 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php on line 45
+[31-Dec-2023 01:47:51 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:48:08 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:48:08 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:48:08 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:48:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: La contraseña debe tener al menos una letra mayúscula in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php:45
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\models\User_model.php(67): Validaciones->validarContrasenia('ma10014696?')
+#1 C:\xampp\htdocs\proyectoExamen\controllers\User_controller.php(21): User->validarUsuario()
+#2 C:\xampp\htdocs\proyectoExamen\index.php(34): ControllerUser->login()
+#3 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php on line 45
+[31-Dec-2023 01:49:01 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:49:01 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:49:04 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:49:15 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:49:15 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:49:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:49:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:49:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:54:05 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:55:43 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:55:43 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:55:43 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:55:43 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:55:51 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:55:51 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:55:51 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:55:51 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:55:51 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:55:51 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:56:41 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:56:41 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:56:41 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:56:43 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:56:43 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:56:43 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:56:48 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:56:48 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:56:48 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:56:52 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:56:52 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:56:52 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:56:53 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:56:53 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:56:53 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:56:59 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:56:59 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:56:59 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:57:00 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:00 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:00 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:57:01 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:01 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:01 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:57:03 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:03 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:03 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:57:05 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:05 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:05 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:57:09 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:09 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:09 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 01:57:11 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:11 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:11 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:11 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:12 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:15 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:15 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:19 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:19 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:21 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:24 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:25 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:25 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:57:27 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:31 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:57:31 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:58:42 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:59:13 Europe/Berlin] Hello, errors!
+[31-Dec-2023 01:59:13 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:59:13 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:59:13 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:59:13 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 01:59:18 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:00:04 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:00:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:00:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:00:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:00:11 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:00:11 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:00:12 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:00:12 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:00:12 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:00:12 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:03:29 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:03:29 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:03:29 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:03:31 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:03:31 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:03:31 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:03:35 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:03:35 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:03:35 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:03:38 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:03:38 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:03:38 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:03:39 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:03:39 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:03:39 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:04:21 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:04:21 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:04:21 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:04:24 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:04:24 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:04:24 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:04:28 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:04:28 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:04:28 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:05:18 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:05:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:05:26 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:05:40 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:05:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:05:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:05:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:05:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:05:46 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:06:37 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:06:38 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:06:38 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:06:38 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:06:44 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:06:44 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:06:44 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:10:15 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:10:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:10:18 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:10:48 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:10:48 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:10:48 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:10:48 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:10:48 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:11:14 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:12:09 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:14:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:18:40 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:18:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:18:43 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:19:04 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:19:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:19:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:19:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:19:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:19:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:19:17 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:19:17 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:19:40 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:28:53 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:28:53 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:28:53 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:28:53 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:29:04 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:29:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:29:19 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:29:19 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:29:19 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:29:21 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:29:21 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:29:21 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:29:23 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:29:23 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:29:23 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:29:23 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:29:26 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:29:54 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:29:54 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:29:54 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:29:54 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:29:54 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:29:57 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:29:57 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:00 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:00 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:00 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:30:01 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:01 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:01 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:30:03 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:03 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:03 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:30:06 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:06 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:07 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:07 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:09 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:18 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:22 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:30:27 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:27 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 02:30:30 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:30 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:30 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:30 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:32 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:41 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:30:41 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:41 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:41 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:41 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:30:45 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:31:03 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:31:03 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:31:03 Europe/Berlin] PHP Fatal error:  Uncaught Exception: Error al obtener propiedades del usuario: valor nombre no valido in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php:58
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades->addPropiedad()
+#1 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 58
+[31-Dec-2023 02:33:33 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:33:33 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:33:36 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:33:50 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:33:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:33:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:33:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:33:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:33:53 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:34:19 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:34:19 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:34:19 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:34:19 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:59:28 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:59:28 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:59:28 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:59:28 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:59:35 Europe/Berlin] Hello, errors!
+[31-Dec-2023 02:59:35 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 02:59:35 Europe/Berlin] PHP Warning:  Undefined array key "imagen_pro" in C:\xampp\htdocs\proyectoExamen\views\propiedad\ver.php on line 32
+[31-Dec-2023 02:59:35 Europe/Berlin] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\proyectoExamen\views\propiedad\ver.php on line 32
+[31-Dec-2023 03:00:25 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:00:25 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:00:25 Europe/Berlin] PHP Warning:  Undefined array key "imagen_pro" in C:\xampp\htdocs\proyectoExamen\views\propiedad\ver.php on line 14
+[31-Dec-2023 03:00:25 Europe/Berlin] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\proyectoExamen\views\propiedad\ver.php on line 14
+[31-Dec-2023 03:01:18 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:01:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:01:18 Europe/Berlin] PHP Warning:  Undefined array key "imagen_pro" in C:\xampp\htdocs\proyectoExamen\views\propiedad\ver.php on line 14
+[31-Dec-2023 03:01:18 Europe/Berlin] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\proyectoExamen\views\propiedad\ver.php on line 14
+[31-Dec-2023 03:06:04 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:06:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:06:18 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:06:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:09:14 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:09:14 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:09:38 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:09:38 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:09:40 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:09:40 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:09:47 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:09:47 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:09:50 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:09:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:09:52 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:09:52 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:10:02 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:10:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:14:26 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:14:26 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:16:20 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:16:20 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:22:01 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:22:01 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:23:11 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:23:11 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:23:27 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:23:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:23:48 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:23:48 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:23:50 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:23:50 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:23:51 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:23:51 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:23:52 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:23:52 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:41:16 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:41:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:41:19 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:41:19 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:43:28 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:43:28 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:43:56 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:43:57 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:44:01 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:44:01 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:44:08 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:44:08 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:44:10 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:44:10 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:44:32 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:44:32 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:44:34 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:44:34 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:51:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:51:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:51:17 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:51:21 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:51:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:51:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:51:32 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:51:44 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:51:44 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:51:44 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:51:44 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:51:47 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:52:02 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:52:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:52:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:52:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:52:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:52:24 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:52:24 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:52:32 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:52:32 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:52:36 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:52:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:52:39 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:52:39 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:52:41 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:52:41 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:53:04 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:53:04 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:53:24 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:53:24 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:53:28 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:54:27 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:54:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:54:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:54:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:54:30 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:54:30 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:54:36 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:54:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:54:38 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:54:38 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:54:53 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:54:53 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 03:54:55 Europe/Berlin] Hello, errors!
+[31-Dec-2023 03:54:55 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 04:31:34 Europe/Berlin] Hello, errors!
+[31-Dec-2023 04:31:34 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 04:31:36 Europe/Berlin] Hello, errors!
+[31-Dec-2023 04:31:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 04:31:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 04:31:37 Europe/Berlin] Hello, errors!
+[31-Dec-2023 04:31:37 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 04:31:37 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 04:31:38 Europe/Berlin] Hello, errors!
+[31-Dec-2023 04:31:38 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 04:31:38 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 04:31:39 Europe/Berlin] Hello, errors!
+[31-Dec-2023 04:31:39 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 04:31:39 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 04:31:41 Europe/Berlin] Hello, errors!
+[31-Dec-2023 04:31:42 Europe/Berlin] Hello, errors!
+[31-Dec-2023 04:31:42 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:26:43 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:26:43 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:26:46 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:27:02 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:27:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:27:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:27:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:27:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:27:06 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:27:44 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:27:44 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:27:44 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:27:44 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 151
+[31-Dec-2023 05:27:44 Europe/Berlin] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 151
+[31-Dec-2023 05:27:44 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:27:44 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:29:51 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:30:27 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:30:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:30:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:30:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 151
+[31-Dec-2023 05:30:27 Europe/Berlin] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 151
+[31-Dec-2023 05:30:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:30:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:41:18 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:41:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:41:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:41:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 151
+[31-Dec-2023 05:41:18 Europe/Berlin] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 151
+[31-Dec-2023 05:41:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:41:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:41:23 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:41:23 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:41:23 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:41:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 151
+[31-Dec-2023 05:41:23 Europe/Berlin] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 151
+[31-Dec-2023 05:41:23 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:41:23 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:41:31 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:41:31 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:46:16 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:46:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:46:16 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 05:46:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:46:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:46:22 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\proyectoExamen\views\user\index.php:43) in C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php on line 131
+[31-Dec-2023 05:46:25 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:46:28 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:46:32 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:46:32 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:46:35 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:46:47 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:46:47 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:46:47 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:46:47 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:46:47 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:46:51 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:47:32 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:47:32 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:47:32 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:47:32 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 152
+[31-Dec-2023 05:47:32 Europe/Berlin] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 152
+[31-Dec-2023 05:47:32 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:47:32 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:49:31 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:50:02 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:50:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:50:02 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:50:02 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: move_uploaded_file(): Argument #1 ($from) must be of type string, array given in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php:152
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php(152): move_uploaded_file(Array, 'http://localhos...')
+#1 C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php(45): Propiedad->crearImagenes(Array)
+#2 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades->addPropiedad()
+#3 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 152
+[31-Dec-2023 05:53:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:53:17 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:53:17 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:53:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: move_uploaded_file(): Argument #1 ($from) must be of type string, array given in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php:152
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php(152): move_uploaded_file(Array, 'asset/img/2c3b3...')
+#1 C:\xampp\htdocs\proyectoExamen\controllers\Propiedades_controller.php(45): Propiedad->crearImagenes(Array)
+#2 C:\xampp\htdocs\proyectoExamen\index.php(22): ControllerPropiedades->addPropiedad()
+#3 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Propiedades_model.php on line 152
+[31-Dec-2023 05:56:06 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:56:06 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:56:06 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:56:06 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:56:06 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:56:12 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:56:12 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:56:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:56:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:56:23 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:56:23 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:56:23 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:56:53 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:05 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:05 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:05 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:05 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:05 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:09 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:09 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:13 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:13 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:16 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:16 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:17 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:19 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:19 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:20 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:20 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:23 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:23 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:25 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:25 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:26 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:26 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:28 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:28 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:38 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:38 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:38 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:41 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:54 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:57:55 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:55 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:57:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: La contraseña debe tener al menos una letra mayúscula in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\models\User_model.php(67): Validaciones->validarContrasenia('ma10014696?')
+#1 C:\xampp\htdocs\proyectoExamen\controllers\User_controller.php(21): User->validarUsuario()
+#2 C:\xampp\htdocs\proyectoExamen\index.php(33): ControllerUser->login()
+#3 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php on line 38
+[31-Dec-2023 05:58:08 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:58:08 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:58:08 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:58:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: La contraseña debe tener al menos una letra mayúscula in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proyectoExamen\models\User_model.php(67): Validaciones->validarContrasenia('ma10014696?')
+#1 C:\xampp\htdocs\proyectoExamen\controllers\User_controller.php(21): User->validarUsuario()
+#2 C:\xampp\htdocs\proyectoExamen\index.php(33): ControllerUser->login()
+#3 {main}
+  thrown in C:\xampp\htdocs\proyectoExamen\models\Validaciones_model.php on line 38
+[31-Dec-2023 05:58:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:58:25 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:58:39 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:58:39 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:58:39 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:58:39 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:58:39 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:58:51 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:58:51 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:58:55 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:58:55 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:58:56 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:58:56 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 05:58:57 Europe/Berlin] Hello, errors!
+[31-Dec-2023 05:58:57 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:10 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:10 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:10 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:10 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:10 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 06:01:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:17 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:18 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:18 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:18 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 06:01:20 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:20 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:20 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:20 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:20 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 06:01:25 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:25 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:26 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:26 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:27 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:27 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:27 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 06:01:32 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:32 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:33 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:33 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:33 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:01:33 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:01:33 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 06:03:36 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:03:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:03:39 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:03:56 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:03:56 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:03:56 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:03:56 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:03:56 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:04:00 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:04:00 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:04:00 Europe/Berlin] PHP Warning:  Undefined array key "img" in C:\xampp\htdocs\proyectoExamen\views\propiedad\ver.php on line 13
+[31-Dec-2023 06:04:17 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:04:17 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:04:19 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:04:19 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:04:19 Europe/Berlin] PHP Warning:  Undefined array key "img" in C:\xampp\htdocs\proyectoExamen\views\propiedad\ver.php on line 13
+[31-Dec-2023 06:07:47 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:07:47 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:08:21 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:08:21 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:08:23 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:08:23 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:10:21 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:10:21 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:10:24 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:10:24 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:10:34 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:10:34 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:10:36 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:10:36 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:11:20 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:11:20 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:11:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:11:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:11:22 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:11:22 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:11:22 Europe/Berlin] PHP Warning:  Undefined array key "accion" in C:\xampp\htdocs\proyectoExamen\index.php on line 27
+[31-Dec-2023 06:11:24 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:11:24 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:17:45 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:17:45 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:17:47 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:17:47 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:18:15 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:18:15 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:18:28 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:18:28 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:18:30 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:18:30 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:18:33 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:18:33 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:18:37 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:18:37 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:18:37 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:18:41 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:18:41 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:18:41 Europe/Berlin] error en la conexion a la BBDD
+[31-Dec-2023 06:18:44 Europe/Berlin] Hello, errors!
+[31-Dec-2023 06:18:46 Europe/Berlin] Hello, errors!

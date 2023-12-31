@@ -1,6 +1,6 @@
 <?php
 require_once "views/templates/header.php"; //? template header
-require_once "views/templates/navUser.php";//? template navUser
+require_once "views/templates/navUser.php"; //? template navUser
 ?>
 <div class="contenedor">
     <!--//! Página index muestra la portada con un título, unas instrucciones y una imagenes sobre propiedades
@@ -25,8 +25,12 @@ require_once "views/templates/navUser.php";//? template navUser
             <tr>
                 <th>Id</th>
                 <th>Nombre</th>
+                <th>Metros Cuadrados</th>
+                <th>Dormitorios</th>
+                <th>Servicios</th>
                 <th>Precio</th>
-                <th>Descripcion</th>
+                <th>Tipo</th>
+                <th>Dirección</th>
             </tr>
         </thead>
         <tbody>
@@ -35,25 +39,29 @@ require_once "views/templates/navUser.php";//? template navUser
             <?php if (!empty($resultados)) : ?>
                 <?php foreach ($resultados as $resultado => $valor) : ?>
                     <tr>
-                        <td><?php echo $valor['id_pro'] ?></td>
+                        <td><?php echo $valor['id'] ?></td>
                         <td><?php echo $valor['nombre_pro'] ?></td>
+                        <td><?php echo $valor['tamanio_pro'] ?></td>
+                        <td><?php echo $valor['dormitorios_pro'] ?></td>
+                        <td><?php echo $valor['banios_pro'] ?></td>
                         <td><?php echo $valor['precio_pro'] ?></td>
-                        <td><?php echo $valor['descripcion_pro'] ?></td>
+                        <td><?php echo $valor['tipo_pro'] ?></td>
+                        <td><?php echo $valor['direccion_pro'] ?></td>
                     </tr>
 
                 <?php endforeach; ?>
                 <!-- Si no existen productos en la bbdd se muestra el mensaje -->
             <?php else : ?>
                 <tr>
-                    <td colspan="6">"No hay productos"</td>
+                    <td colspan="8">"No hay productos"</td>
                 </tr>
             <?php endif; ?>
         </tbody>
     </table>
 </div><!-- final Clase contenedor-->
 <div class="ancla">
-        <a href="#">Ir al inicio</a>
-    </div>
+    <a href="#">Ir al inicio</a>
+</div>
 <?php
 require_once "views/templates/footer.php"; //? template footer
 ?>
