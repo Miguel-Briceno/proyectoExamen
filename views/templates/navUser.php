@@ -8,7 +8,7 @@
                 <div class="contenedor-link">
                     <ul class="link">
                         <li class="">
-                            <a class="" href="#">Home</a>
+                            <a class="" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="" href="index.php?accion=registro">Registro</a>
@@ -22,3 +22,6 @@
         </nav> <!-- final navbar-->
     </header>
 </div><!-- final contenedor header-->
+<main>
+    <div class="contenedor">
+        

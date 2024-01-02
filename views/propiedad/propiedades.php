@@ -6,30 +6,33 @@
 <section>
     <div class="contenedor">
         <div class="titulo">
-            <h2>Panel de Administración</h2>
+            <h2>Bienvenido<?php echo " ".$_SESSION['usuario']; ?> al panel de administración</h2>
         </div><!-- final class título-->
-        <div class="container-table">
-            <h3>Bienvenido <?php echo $_SESSION['usuario']; ?></h3>
-            <form action="index.php?accion=filtrar" method="POST">
-                <label for="filtro">Ordenar por:</label>
-                <select name="filtro" id="filtro">
-                    <option value="" selected disabled>Filtrar</option>
-                    <option value="nombre">Nombre</option>
-                    <option value="precio">Precio</option>
-                    <option value="tipo">Tipo</option>
-                </select>
-                <input type="hidden" name="realizar" value="filtro">
-                <input type="submit" value="Ordenar">
-            </form>
-            <a href="index.php?accion=agregar">Agregar</a>
+        
+            <div class="form-buscador">
+                <form class="formulario-buscador" action="index.php?accion=filtrar" method="POST">
+                    <div >
+                        <label for="filtro">Ordenar por:</label>
+                        <select name="filtro" id="filtro">
+                            <option value="" selected disabled>Filtrar</option>
+                            <option value="nombre">Nombre</option>
+                            <option value="precio">Precio</option>
+                            <option value="tipo">Tipo</option>
+                        </select>
+                    </div>
+                    <div><input type="hidden" name="realizar" value="filtro"></div>
+                    <div><input class="btn btn-ordenar" type="submit" value="Ordenar"></div>
+                </form>
+            </div>
+            
+            <div class="container-table">
+            <a class="btn btn--primario" href="index.php?accion=agregar">Agregar</a>
             <table border="2">
                 <thead>
                     <tr>
                         <th>Id</th>
                         <th>Nombre</th>
-                        <th>Metros Cuadrados</th>
-                        <th>Dormitorios</th>
-                        <th>Servicios</th>
+                        <th>Metros Cuadrados</th>                        
                         <th>Precio</th>
                         <th>Tipo</th>
                         <th>Dirección</th>
@@ -44,16 +47,14 @@
                             <tr>
                                 <td><?php echo $valor['id'] ?></td>
                                 <td><?php echo $valor['nombre_pro'] ?></td>
-                                <td><?php echo $valor['tamanio_pro'] ?></td>
-                                <td><?php echo $valor['dormitorios_pro'] ?></td>
-                                <td><?php echo $valor['banios_pro'] ?></td>
+                                <td><?php echo $valor['tamanio_pro'] ?></td>                                
                                 <td><?php echo $valor['precio_pro'] ?></td>
                                 <td><?php echo $valor['tipo_pro'] ?></td>                                
                                 <td><?php echo $valor['direccion_pro'] ?></td>                                
-                                <td class="btn">
-                                    <a href="index.php?accion=ver&id=<?php echo $valor['id'] ?>">Ver</a>
-                                    <a href="index.php?accion=editar&id=<?php echo $valor['id'] ?>">Editar</a>
-                                    <a href="index.php?accion=eliminar&id=<?php echo $valor['id'] ?>">Eliminar</a>
+                                <td class="input-tabla">
+                                    <a class="btn btn-tabla btn-tabla--primario" href="index.php?accion=ver&id=<?php echo $valor['id'] ?>">Ver</a>
+                                    <a class="btn btn-tabla btn-tabla--secundario" href="index.php?accion=editar&id=<?php echo $valor['id'] ?>">Editar</a>
+                                    <a class="btn btn-tabla btn-tabla--terceario" href="index.php?accion=eliminar&id=<?php echo $valor['id'] ?>">Eliminar</a>
                                 </td>
                             </tr>
 

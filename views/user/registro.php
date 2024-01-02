@@ -2,8 +2,7 @@
 require_once "views/templates/header.php"; //? template header
 require_once "views/templates/navUser.php"; //? template navUser
 ?>
-<main>
-    <div class="contenedor">
+
         <div class="titulo">
             <h2>Registro Vendedores</h2>
         </div><!-- final Clase título -->
@@ -22,20 +21,22 @@ require_once "views/templates/navUser.php"; //? template navUser
                     <label class="label" for="conContrasenia">Confirmar contraseña:</label>
                     <input class="input" type="password" name="conContrasenia" id="conContrasenia" placeholder="Confirma tu contraseña" required>
                 </div>
-                <input type="submit" value="Registrar" name="registrar">
+                <input class="btn btn--primario" type="submit" value="Registrar" name="registrar">
             </form>
         </div><!-- fin clase contenedor-formulario -->
-        <div class="contenedor-input">
-            <a href="index.php?accion=">Login</a>
+        <div>
+            <p>Si ya estás registrado pulsa <a href="index.php?accion="><b>Aqui.</b></a></p>
         </div><!-- fin clase contenedor-enlace -->
         <div class="errores">
-        </div><!-- final Clase contenedor-form -->
-    </div><!-- final Clase contenedor-->
-</main>
-<!--// todo: si el array errores no esta vacio se muestran en pantalla
--->
-
-
+            <p><?php echo $informacion; ?></p>
+                <?php
+                if (isset($errores)) {
+                    foreach ($errores as $error) {
+                        echo "<p class='error'>" . $error . "</p>";
+                    }
+                }
+                ?>
+        </div><!-- final Clase errores-->
 <?php
 require_once "views/templates/footer.php"; //? template footer
 ?>

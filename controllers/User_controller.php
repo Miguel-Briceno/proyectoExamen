@@ -57,7 +57,9 @@ class ControllerUser{
                 $validar = new Validaciones();                
                 $usuarioExiste = $validar->comprobarUsuario($email);
                 if ($usuarioExiste) {
-                    echo "<p>Usuario ya existe</p>";
+                    $informacion= "Usuario ya existe";
+                    require_once 'views/user/registro.php';
+                    
                 } else {
                     $usuario->set_Registrar($email, $contrasenia);
                     require_once 'views/user/registro.php';

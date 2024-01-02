@@ -7,12 +7,6 @@ require_once "views/templates/navUser.php"; //? template navUser
     //! aqui el vendedor debe ingresar con su login a traves de la barra de navegación que se encuentra en el 
     //! header. 
 -->
-    <div class="contenedor-buscador">
-        <form class="form" role="search">
-            <input class="input-buscador" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn-buscador" type="submit">Buscador</button>
-        </form>
-    </div>
     <div class="titulo">
         <h2>Listado de propiedades de la Inmobiliaria MB</h2>
     </div><!-- final Clase título-->
