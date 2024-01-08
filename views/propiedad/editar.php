@@ -38,11 +38,18 @@ require_once "views/templates/navPropiedad.php"; //? template navUser
                     <input type="number" name="precio_pro" id="precio_pro" value="<?= $valor['precio_pro'] ?>">
                 </div>
                 <div class="contenedor-input">
-                    <?php echo '<img height="200px" width="200px" src="http://localhost/proyectoExamen/asset/img/' . $valor["img_pro"] . ' " alt="foto ' . $valor["nombre_pro"] . ' ">' ?>
-                </div>
+                    <label for="tipo_pro">Tipo:</label>
+                    <?php if($_valor['tipo_pro']='chalet'): ?>
+                    <select name="tipo_pro" id="tipo_pro">
+                        <option value="chalet" selected>Chalet</option>
+                    <?php else: ?>
+                        <option value="Piso" selected>Piso</option>                        
+                    </select>
+                    <?php endif; ?>
+                </div><br><br>                                
                 <div class="contenedor-input">
                     <label for="img_pro">Imagen:</label>
-                    <input type="file" name="img_pro" id="img_pro" value=" ">
+                    <input type="file" name="img_pro" id="img_pro" value="<?php echo '<img height="50px" width="50px" src="asset/img/'.$valor["img_pro"]. '">' ?> ">
                 </div>
                 <div class="contenedor-input">
                     <label for="direccion">Dirección:</label>

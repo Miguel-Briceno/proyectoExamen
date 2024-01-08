@@ -8,7 +8,7 @@
                 <div class="contenedor-link">
                     <ul class="link">
                         <li class="nav-item">
-                            <a class="cerrarSession" href="http://localhost/proyectoExamen/index.php?accion=cerrarSession">Cerrar Sessión</a>
+                            <a class="cerrarSession" href="index.php?accion=pagInicio">Cerrar Sessión</a>
                         </li>
                     </ul>
                 </div>

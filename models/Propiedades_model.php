@@ -1,18 +1,7 @@
 <?php
 require_once 'models/ConexionDB_model.php';
 class Propiedad
-{   
-    private $id;
-    private $nombre;
-    private $tamanio;
-    private $dormitorios;
-    private $banios;
-    private $precio;
-    private $tipo;
-    private $img;
-    private $direccion;
-    private $descripcion;
-    private $idVendedor;    
+{ 
     private $pdo;
     private $conexionDB;    
     public function __construct()
@@ -21,8 +10,8 @@ class Propiedad
         $this->pdo=$this->conexionDB->get_ObtenerConexion();        
     }
     
-    // metodo para obtener los productos de la base de datos
-    function get_Propiedades(){
+    
+    public function get_Propiedades(){// metodo para obtener los productos de la base de datos
         try{
             $stmt = $this->pdo->prepare('SELECT * FROM propiedades');
             $stmt->execute();
@@ -34,8 +23,8 @@ class Propiedad
             error_log("Error al obtener propiedades: ". $e->getMessage());            
         }   
     }
-    // metodo para caragar la informacion de productos del vendedor
-    function get_Cargar($email){
+    
+    public function get_Cargar($email){// metodo para caragar la informacion de productos del vendedor
         try{       // se hace asi la consulta para no pedir todos los resultados y que traiga los resultados del vendedor     
             $stmt = $this->pdo->prepare('SELECT propiedades.id, propiedades.nombre_pro, 
             propiedades.tamanio_pro, propiedades.dormitorios_pro, propiedades.banios_pro, 
@@ -55,7 +44,8 @@ class Propiedad
             error_log("Error al cargar propiedades: ". $e->getMessage());
         }   
     }
-    public function set_CrearPropiedad($nombre, $tamanio, $dormitorios, $banios, $precio, $tipo, $imagen, $direccion, $descripcion, $idVendedor){
+
+    public function set_CrearPropiedad($nombre, $tamanio, $dormitorios, $banios, $precio, $tipo, $imagen, $direccion, $descripcion, $idVendedor){//crea una propiedad con los datos pasados
         try{
         $stmt = $this->pdo->prepare("INSERT INTO propiedades(nombre_pro, tamanio_pro, dormitorios_pro, banios_pro, precio_pro, tipo_pro, img_pro, direccion_pro, descripcion_pro, id_vendedor) 
         VALUES(:nombre_pro,:tamanio_pro,:dormitorios_pro,:banios_pro,:precio_pro,:tipo_pro,:img_pro,:direccion_pro,:descripcion_pro,:id_vendedor)");
@@ -76,7 +66,8 @@ class Propiedad
             error_log("Error al crear propiedad: ". $e->getMessage());
         }
     }
-    public function get_PropiedadesById($id){      
+
+    public function get_PropiedadesById($id){ // obtienes las propiedades por id
         try{
             $stmt = $this->pdo->prepare("SELECT * FROM propiedades WHERE id=:id");
             $stmt->bindParam(':id', $id);
@@ -88,13 +79,12 @@ class Propiedad
             error_log("Error al obtener propiedad: ". $e->getMessage());
         }
     }
-    public function set_PropiedadesById($id, $nombre,$tamanio,$dormitorios,$banios, $precio,$tipo,$img,$direccion, $descripcion, $idVendedor)
-    {
-        
+
+    public function set_PropiedadesById($id, $nombre,$tamanio,$dormitorios,$banios, $precio,$tipo,$img,$direccion, $descripcion, $idVendedor){//Modifica una propiedad por su id        
         try{
-            $stmt = $this->pdo->prepare("UPDATE propiedades SET nombre_pro=:nombre,tamanio_pro=:tamanio_pro, dormitorios_pro=:dormitorios_pro,
-                                    banios_pro=:banios_pro, precio_pro=:precio,tipo_pro=:tipo_pro, img_pro=:img_pro, direccion_pro=:direccion_pro,descripcion_pro=:descripcion,id_vendedor=:idVendedor WHERE id_pro=:id");
-            $stmt->bindParam(":id_pro", $id);
+            $stmt = $this->pdo->prepare("UPDATE propiedades SET nombre_pro=:nombre_pro,tamanio_pro=:tamanio_pro, dormitorios_pro=:dormitorios_pro,
+                                    banios_pro=:banios_pro, precio_pro=:precio_pro,tipo_pro=:tipo_pro, img_pro=:img_pro, direccion_pro=:direccion_pro,descripcion_pro=:descripcion_pro,id_vendedor=:id_vendedor WHERE id=:id");
+            $stmt->bindParam(":id", $id);
             $stmt->bindParam(":nombre_pro", $nombre);
             $stmt->bindParam(":tamanio_pro", $tamanio);
             $stmt->bindParam(":dormitorios_pro", $dormitorios);
@@ -105,26 +95,26 @@ class Propiedad
             $stmt->bindParam(":direccion_pro", $direccion);
             $stmt->bindParam(":descripcion_pro", $descripcion);
             $stmt->bindParam(":id_vendedor", $idVendedor);
-            $stmt->execute();
-            $anuncio="Datos cargados con exito";
-            echo $anuncio;
+            $resul=$stmt->execute();
+            return $resul;            
         }catch(PDOException $e){
             throw new Exception("Error al actualizar propiedad: " . $e->getMessage());
             error_log("Error al actualizar propiedad: ". $e->getMessage());
         }
     }
-    public function delete_PropiedadesById($id){    
+
+    public function delete_PropiedadesById($id){  //borra una propiedad por el id 
         try{
             $stmt = $this->pdo->prepare("DELETE FROM propiedades WHERE id=:id");
             $stmt->bindParam(":id", $id);
-            $stmt->execute();
-            
+            $stmt->execute();            
         }catch(PDOException $e){
             throw new Exception("Error al eliminar propiedad: " . $e->getMessage());
             error_log("Error al eliminar propiedad: ". $e->getMessage());
         }
     }
-    public function get_PropiedadesByFiltro($filtro,$idVendedor){
+
+    public function get_PropiedadesByFiltro($filtro,$idVendedor){// Ordena las propiedades por el filtro
         try{
             if($filtro==="precio"){
                 $sql = "SELECT * FROM propiedades WHERE id_vendedor=:id_vendedor ORDER BY precio_pro";
@@ -146,7 +136,7 @@ class Propiedad
         }
     }
 
-    public function crearImagenes($img){
+    public function crearImagenes($img){ // metodo para crear los nombres de las imagenes que se almacenan en la base de datos
         $carpeta = 'asset/img/';
         $imagen = md5(uniqid(rand())).'.jpg';
         move_uploaded_file($img['tmp_name'], $carpeta.$imagen);

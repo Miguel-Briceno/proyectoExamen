@@ -17,16 +17,12 @@ require_once 'controllers/Propiedades_controller.php';
 if (isset($_SESSION['usuario'])) {
     // Si hay una sesión activa, redirige según la acción
     $controllerPro = new ControllerPropiedades;
-    
+    $controller = new ControllerUser;    
     if (isset($_GET['accion']) && method_exists('ControllerPropiedades', $_GET['accion'])) {
         $controllerPro->{$_GET['accion']}();
-    } else {
-        // Redirige a la página de inicio de productos si no se especifica una acción
-        $controllerPro->pagInicio();
-    }
-    if($_GET['accion']=='inicioSession'){        
-        $controllerPro->cerrarSession();       
-    }
+    } else {        
+        $controller->pagInicio();// Redirige a la página de inicio de productos si no se especifica una acción
+    }    
 } else {
     $controller = new ControllerUser;// Si no hay una sesión activa, redirige a la página de inicio de usuario
     if (isset($_GET['accion']) && method_exists('ControllerUser', $_GET['accion'])) {

@@ -7,22 +7,18 @@ require_once('models/Propiedades_model.php');
 // clase accion controller que es requerida por el index del proyecto
 class ControllerPropiedades{
 
-    public function pagInicio(){//metodo que lleva al index y muestra listado de productos tabla
-        $propiedad = new Propiedad();
-        $resultados = $propiedad->get_Propiedades();
-        require_once "views/user/index.php";
-    }
     
     public function cargar($usuario){// metodo cargar
         $propiedad = new Propiedad();
-        $resultados = $propiedad->get_Cargar($usuario); // cargar propiedades por usuario        
-        require_once 'views/propiedad/propiedades.php';        
+        $resultados = $propiedad->get_Cargar($usuario); // cargar propiedades por usuario     
+        require_once 'views/propiedad/propiedades.php';
+        exit;        
     }
-
     
     public function agregar(){// metodo agregar para facilitarnos el formulario
         require_once "views/propiedad/agregar.php";
     }
+
     public function addPropiedad(){// metodo para agregar a la bbdd una propiedad
         try{
             if(isset($_GET['accion']) && $_POST['addPropiedad']=='salvar'){
@@ -56,6 +52,7 @@ class ControllerPropiedades{
                     $resultados = $propiedades->cargar($_SESSION['usuario']);// se pueden cargar las propiedades por el id y se reutiliza el codigo
                     //pero para efectos de los requisitos en el metodo cargar se hace un join                    
                     require_once "views/propiedad/propiedades.php";
+                    exit;
                 }
             }else{echo "Datos de producto faltantes o inválidos";}
         }catch (Exception $e) { 
@@ -64,14 +61,15 @@ class ControllerPropiedades{
             }
 
     }
-    // metodo editar
-    public static function editar(){//Metodo que muestra los datos de la propiedad para ser editados
+    
+    public function editar(){//Metodo que muestra los datos de la propiedad para ser editados
         try{
             if(isset($_GET['accion'])&& $_GET['accion']=='editar'){
                 $id = $_GET['id'];
                 $propiedad = new Propiedad();
                 $resultados = $propiedad->get_PropiedadesById($id);
                 require_once "views/propiedad/editar.php";
+                exit;
             }
         }
         catch (Exception $e) {
@@ -80,10 +78,10 @@ class ControllerPropiedades{
         }
     }
     
-    public static function actualizar(){// metodo actualizar
+    public function actualizar(){// metodo actualizar
         try{   
             if(isset($_POST['accion'])&& $_POST['accion']=='Editar'){
-                $id = $_POST['id_pro'];
+                $id = $_POST['id'];
                 $nombre = $_POST['nombre_pro'];
                 $tamanio = $_POST['tamanio_pro'];
                 $dormitorios = $_POST['dormitorios_pro'];
@@ -99,6 +97,7 @@ class ControllerPropiedades{
                 $propiedades= new ControllerPropiedades;
                 $resultados = $propiedades->cargar($_SESSION['usuario']);
                 require_once "views/propiedad/propiedades.php";
+                exit;
 
             }else{echo "Datos de producto faltantes o inválidos";}
         }catch (Exception $e) {
@@ -107,16 +106,27 @@ class ControllerPropiedades{
         }
 
     }
+
+    public function corroborar(){//metodo que llama la propiedad que se va a eliminar
+            
+            if(isset($_GET['accion'])&& $_GET['accion']=='corroborar'){
+                $id_pro = $_GET['id'];
+                $propiedad = new Propiedad();
+                $resultado = $propiedad->get_PropiedadesById($id_pro);                
+                require_once 'views/propiedad/eliminar.php'; 
+                exit;               
+            }
+    }
     
-    public static function eliminar(){// metodo eliminar
+    public function eliminar(){// metodo eliminar
         try{
-            if(isset($_GET['accion'])&& $_GET['accion']=='eliminar'){
+            if(isset($_GET['accion'])&& $_GET['accion']=='eliminar'){            
                 $id = $_GET['id'];  
                 $propiedad = new Propiedad();
                 $propiedad->delete_PropiedadesById($id);
                 $propiedades= new ControllerPropiedades;
                 $propiedades->cargar($_SESSION['usuario']);
-            }else{echo "Datos de producto faltantes o inválidos";}
+            }else{$informacion[]="Datos de producto faltantes o inválidos";}
         }
         catch (Exception $e) {
             throw new Exception("Error al eliminar propiedad: " . $e->getMessage());
@@ -138,7 +148,7 @@ class ControllerPropiedades{
     require_once "views/propiedad/propiedades.php";
     }
 
-    public function filtrar(){
+    public function filtrar(){//metodo para filtrar pos tres campos precio, tipo, nombre
         if($_POST['realizar']==="filtro"){
             $filtro = $_POST['filtro'];
             $idVendedor = $_SESSION['id'];
@@ -147,7 +157,8 @@ class ControllerPropiedades{
             require_once "views/propiedad/propiedades.php";
         }
     }
-    public function ver(){
+
+    public function ver(){//Metodo para Visualizar la propiedad seleccionada
         if(isset($_GET['accion'])&& $_GET['accion']=='ver'){
             $id = $_GET['id'];
             $propiedad = new Propiedad();
@@ -155,6 +166,13 @@ class ControllerPropiedades{
             require_once "views/propiedad/ver.php";
         }
     }
+
+    public function no(){//Metodo para ir atras cuando no se quiere eliminar la propiedad
+        $propiedades= new ControllerPropiedades;
+        $propiedades->cargar($_SESSION['usuario']);
+        require_once "views/propiedad/propiedades.php";
+    }
+    
 
 }
 ?>

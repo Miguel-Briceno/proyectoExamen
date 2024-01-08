@@ -42,12 +42,11 @@ require_once "views/templates/navUser.php"; //? template navUser
                         <td><?php echo $valor['tipo_pro'] ?></td>
                         <td><?php echo $valor['direccion_pro'] ?></td>
                     </tr>
-
                 <?php endforeach; ?>
-                <!-- Si no existen productos en la bbdd se muestra el mensaje -->
+                <!-- Si no existen propiedades en la bbdd se muestra el mensaje -->
             <?php else : ?>
                 <tr>
-                    <td colspan="8">"No hay productos"</td>
+                    <td colspan="8">"No hay propiedades"</td>
                 </tr>
             <?php endif; ?>
         </tbody>

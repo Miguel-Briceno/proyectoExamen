@@ -137,6 +137,16 @@ li a{
 .cerrarSession{
     color: rgb(80, 6, 6);
 }
+.contenedorError{
+    border: 2px solir red;
+    text-align: left;
+}
+.error{
+    color: rgb(80, 6, 6);
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 1rem;
+}
 
 /*** Login y Registro ***/
 
@@ -278,4 +288,40 @@ p{
 }
 .titulo{
     text-align: center;
+}
+.contenedor-registrado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+.registrado{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: green;
+
+}
+.contenedor-corroborar {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 50px;
+}
+.corroborar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+    background-color: #ccc;
+    padding: 20px;
+    margin: 1rem;
+}
+.input-corroborar{
+    margin: 1rem;
 }

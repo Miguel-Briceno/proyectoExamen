@@ -2,7 +2,13 @@
 require_once "views/templates/header.php"; //? template header
 require_once "views/templates/navUser.php"; //? template navUser
 ?>
-
+        <div class="contenedorError">
+            <?php if (isset($informacion)): ?>
+                <?php foreach ($informacion as $res): ?>
+                    <p class="error"><?php echo $res; ?> </p>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div><!-- final Clase errores-->
         <div class="titulo">
             <h2>Registro Vendedores</h2>
         </div><!-- final Clase título -->
@@ -25,18 +31,14 @@ require_once "views/templates/navUser.php"; //? template navUser
             </form>
         </div><!-- fin clase contenedor-formulario -->
         <div>
-            <p>Si ya estás registrado pulsa <a href="index.php?accion="><b>Aqui.</b></a></p>
+            <p>Si ya estás registrado pulsa <a href="index.php?accion=inicioSession"><b>Aqui.</b></a></p>
         </div><!-- fin clase contenedor-enlace -->
-        <div class="errores">
-            <p><?php echo $informacion; ?></p>
-                <?php
-                if (isset($errores)) {
-                    foreach ($errores as $error) {
-                        echo "<p class='error'>" . $error . "</p>";
-                    }
-                }
-                ?>
-        </div><!-- final Clase errores-->
+        <?php if(!empty($usuarioRegistrado)): ?>
+        <div class="registrado">
+            <p class="registrado"><?php echo $usuarioRegistrado ?></p>
+        </div>
+        <?php endif; ?>
+        
 <?php
 require_once "views/templates/footer.php"; //? template footer
 ?>

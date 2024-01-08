@@ -3,12 +3,12 @@
         <nav class="navbar">
             <div class="contenedor-navbar">
                 <div class="contenedor-logo">
-                    <a class="logo" href="http://localhost/proyectoExamen/"><img src="http://localhost/proyectoExamen/asset/img/logoInm.svg" alt="Logo Inmobiliaria"></a>
+                    <a class="logo" href="http://localhost/proyectoExamen/index.php?accion=pagInicio"><img src="http://localhost/proyectoExamen/asset/img/logoInm.svg" alt="Logo Inmobiliaria"></a>
                 </div>
                 <div class="contenedor-link">
                     <ul class="link">
                         <li class="">
-                            <a class="" href="index.php">Home</a>
+                            <a class="" href="index.php?accion=pagInicio">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="" href="index.php?accion=registro">Registro</a>

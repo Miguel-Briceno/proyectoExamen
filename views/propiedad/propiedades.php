@@ -23,8 +23,7 @@
                     <div><input type="hidden" name="realizar" value="filtro"></div>
                     <div><input class="btn btn-ordenar" type="submit" value="Ordenar"></div>
                 </form>
-            </div>
-            
+            </div>            
             <div class="container-table">
             <a class="btn btn--primario" href="index.php?accion=agregar">Agregar</a>
             <table border="2">
@@ -54,7 +53,7 @@
                                 <td class="input-tabla">
                                     <a class="btn btn-tabla btn-tabla--primario" href="index.php?accion=ver&id=<?php echo $valor['id'] ?>">Ver</a>
                                     <a class="btn btn-tabla btn-tabla--secundario" href="index.php?accion=editar&id=<?php echo $valor['id'] ?>">Editar</a>
-                                    <a class="btn btn-tabla btn-tabla--terceario" href="index.php?accion=eliminar&id=<?php echo $valor['id'] ?>">Eliminar</a>
+                                    <a class="btn btn-tabla btn-tabla--terceario" href="index.php?accion=corroborar&id=<?php echo $valor['id'] ?>">Eliminar</a>
                                 </td>
                             </tr>
 
@@ -70,6 +69,7 @@
 
         </div>
     </div><!-- final class contenedor-->
+    
 </section>
 
 <?php
